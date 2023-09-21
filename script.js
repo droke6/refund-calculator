@@ -8,7 +8,7 @@ function calculateRefundIndividual() {
 
     var monthsDifference = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
 
-    var amountUsed= (((monthsDifference / 12) * annualFee)) + 12.92;
+    var amountUsed= (((monthsDifference / 12) * annualFee));
 
     var refundAmount= (annualFee - amountUsed)
 
