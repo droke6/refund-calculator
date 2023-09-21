@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="title">
-        <img src="./logo.PNG" width="200px" height="auto">
+        <!-- <img src="./logo.PNG" width="200px" height="auto"> -->
         <h1>PSA Pickleball Refund Calculator</h1>
     </div> 
             <ul>
@@ -33,7 +33,7 @@
 
             <button onclick="calculateRefundIndividual()">Caluclate</button>
 
-            <h3>Amount Used: <span id="amountUsed"></span></h3>
+            <h3>Amount Used: <span id="amountUsed" class="money-kept"></span></h3>
             <h3>Refund Amount: <span id="refundAmount"></span></h3>
         </div>
         <div class="couple">
@@ -50,7 +50,7 @@
 
             <button onclick="calculateRefundCouple()">Calculate</button>
             
-            <h3>Amount Used: <span id="amountUsed1"></span></h3>
+            <h3>Amount Used: <span id="amountUsed1" class="money-kept"></span></h3>
             <h3>Refund Amount: <span id="refundAmount1"></span></h3>
         </div>
 
@@ -66,7 +66,7 @@
             <input type="number" id="annualFee2" value="320">
 
             <button onclick="calculateRefundFamily()">Calculate</button>
-            <h3>Amount Used: <span id="amountUsed2"></span></h3>
+            <h3>Amount Used: <span id="amountUsed2" class="money-kept"></span></h3>
             <h3>Refund Amount: <span id="refundAmount2"></span></h3>
         </div>
     </div> 
