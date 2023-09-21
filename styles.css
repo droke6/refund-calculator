@@ -70,7 +70,6 @@ ul {
 
 span {
     color: red;
-    font-weight: bold;
 }
 
 @media (max-width: 700px){
