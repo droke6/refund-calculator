@@ -7,10 +7,9 @@ function calculateRefundIndividual() {
     endDate = new Date(endDate);
 
     var monthsDifference = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
-
-    var amountUsed= (((monthsDifference / 12) * annualFee) + 12.92);
-
-    var refundAmount= (annualFee - amountUsed)
+   
+    var amountUsed = monthsDifference * 12.9166667;
+    var refundAmount= (annualFee - amountUsed);
 
     document.getElementById('amountUsed').textContent = amountUsed.toFixed(2);
     document.getElementById('refundAmount').textContent = refundAmount.toFixed(2);
@@ -26,12 +25,10 @@ function calculateRefundCouple() {
 
     var monthsDifference = (endDate1.getFullYear() - startDate1.getFullYear()) * 12 + (endDate1.getMonth() - startDate1.getMonth());
 
-    var amountUsed1 = (((monthsDifference / 12) * annualFee1) + 24.17);
-
-    var refundAmount1 = (annualFee1 - amountUsed1)
+    var amountUsed1 = monthsDifference * 24.1666667;
+    var refundAmount1 = (annualFee1 - amountUsed1);
 
     document.getElementById('amountUsed1').textContent = amountUsed1.toFixed(2);
-
     document.getElementById('refundAmount1').textContent = refundAmount1.toFixed(2);
 }
 
@@ -45,11 +42,9 @@ function calculateRefundFamily() {
 
     var monthsDifference = (endDate2.getFullYear() - startDate2.getFullYear()) * 12 + (endDate2.getMonth() - startDate2.getMonth());
 
-    var amountUsed2 = (((monthsDifference / 12) * annualFee2) + 26.67)
-
-    var refundAmount2 = (annualFee2 - amountUsed2)
+    var amountUsed2 = monthsDifference * 26.6666667;
+    var refundAmount2 = (annualFee2 - amountUsed2);
     
     document.getElementById('amountUsed2').textContent = amountUsed2.toFixed(2);
     document.getElementById('refundAmount2').textContent = refundAmount2.toFixed(2);
-
 }
