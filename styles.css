@@ -89,5 +89,13 @@ span {
     .container{
         flex-direction: column;
     }
+    
+    .title img{
+        display: none;
+    }
+
+    .title h1 {
+        width: 100%;
+    }
 }
 
