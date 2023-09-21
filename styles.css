@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background-image: url(background.PNG);
 }
 
 .title  {
@@ -8,15 +8,16 @@ body {
     align-items: center;
 }
 
-img {
+/*img {
     position: absolute;
     top: 0;
     left: 0;
     mix-blend-mode: color-burn;
-}
+}*/
 
 h1{
     align-self: center;
+    color: white;
 }
 h2 {
     text-align: center;
@@ -62,6 +63,9 @@ ul {
     list-style: none;
     text-align: center;
     margin-bottom: 40px;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
 }
 
 span {
@@ -80,6 +84,10 @@ span {
 
     .title h1 {
         width: 100%;
+        text-align: center;
     }
 }
 
+.money-kept {
+    color: green;
+}
