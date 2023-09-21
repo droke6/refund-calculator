@@ -26,7 +26,7 @@ function calculateRefundCouple() {
 
     var monthsDifference = (endDate1.getFullYear() - startDate1.getFullYear()) * 12 + (endDate1.getMonth() - startDate1.getMonth());
 
-    var amountUsed1 = (((monthsDifference / 12) * annualFee1));
+    var amountUsed1 = (((monthsDifference / 12) * annualFee1) + 24.17);
 
     var refundAmount1 = (annualFee1 - amountUsed1)
 
@@ -45,7 +45,7 @@ function calculateRefundFamily() {
 
     var monthsDifference = (endDate2.getFullYear() - startDate2.getFullYear()) * 12 + (endDate2.getMonth() - startDate2.getMonth());
 
-    var amountUsed2 = (((monthsDifference / 12) * annualFee2))
+    var amountUsed2 = (((monthsDifference / 12) * annualFee2) + 26.67)
 
     var refundAmount2 = (annualFee2 - amountUsed2)
     
