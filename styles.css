@@ -32,31 +32,15 @@ h3 {
     gap: 35px;
 }
 
-.individual {
+.individual,
+.couple,
+.family {
     display: flex;
     flex-direction: column;
     border: solid black;
     padding:18px;
     margin-bottom: 20px;
     background: white;
-}
-
-.couple {
-    display: flex;
-    flex-direction: column;
-    border: solid black;
-    padding: 18px;
-    margin-bottom: 20px;
-    background-color: white;
-}
-
-.family {
-    display: flex;
-    flex-direction: column;
-    border: solid black;
-    padding: 18px;
-    margin-bottom: 20px;
-    background-color: white;
 }
 
 label {
