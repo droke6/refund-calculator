@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Refund Calculator</title>
+</head>
+<body>
+    <div class="title">
+        <img src="logo.jpg" width="200px" height="auto">
+        <h1>PSA Pickleball Refund Calculator</h1>
+    </div> 
+            <ul>
+                <li>Do <span>not</span> change the Annual fee.</li>
+                <li><span>Only</span> change the Start Date and End Date.</li>
+                <li>The End Date <span>cannot</span> more than a year after the Start Date.</li>
+                <li>If refund amount is negative, it means <span>zero</span> refund.</li>
+            </ul>
+
+    <div class="container">
+        <div class="individual">
+            <h2>Individual Membership</h2>
+
+            <label for="startDate">Start Date: </label>
+            <input type="date" id="startDate">
+
+            <label for="endDate">End Date: </label>
+            <input type="date" id="endDate">
+
+            <label for="annualFee">Annual Fee: </label>
+            <input type="number" id="annualFee" value="155">
+
+            <button onclick="calculateRefundIndividual()">Caluclate</button>
+
+            <h3>Amount Used: <span id="amountUsed"></span></h3>
+            <h3>Refund Amount: <span id="refundAmount"></span></h3>
+        </div>
+        <div class="couple">
+            <h2>Couple's Membership</h2>
+            <label for="startDate1">Start Date: </label>
+            <input type="date" id="startDate1">
+
+            <label for="endDate1">End Date: </label>
+            <input type="date" id="endDate1">
+
+            <label for="annualFee1">Annual Fee: </label>
+            <input type="number" id="annualFee1" value="290">
+
+
+            <button onclick="calculateRefundCouple()">Calculate</button>
+            
+            <h3>Amount Used: <span id="amountUsed1"></span></h3>
+            <h3>Refund Amount: <span id="refundAmount1"></span></h3>
+        </div>
+
+        <div class="family">
+            <h2>Family Membership</h2>
+            <label for="startDate">Start Date: </label>
+            <input type="date" id="startDate2">
+
+            <label for="endDate">End Date: </label>
+            <input type="date" id="endDate2">
+
+            <label for="annualFee">Annual Fee: </label>
+            <input type="number" id="annualFee2" value="320">
+
+            <button onclick="calculateRefundFamily()">Calculate</button>
+            <h3>Amount Used: <span id="amountUsed2"></span></h3>
+            <h3>Refund Amount: <span id="refundAmount2"></span></h3>
+        </div>
+    </div> 
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
