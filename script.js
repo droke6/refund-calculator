@@ -10,7 +10,6 @@ function calculateRefundIndividual() {
     var monthsDifference = endDate.getMonth() - startDate.getMonth();
     var daysDifference = endDate.getDate() - startDate.getDate();
     
-    // Calculate total time in months rounded up
     var totalTime = (yearsDifference * 12) + monthsDifference + Math.ceil(daysDifference / 30);
 
     var amountUsed = totalTime * 12.9166667;
@@ -32,7 +31,6 @@ function calculateRefundCouple() {
     var monthsDifference1 = endDate1.getMonth() - startDate1.getMonth();
     var daysDifference1= endDate1.getDate() - startDate1.getDate();
     
-    // Calculate total time in months rounded up
     var totalTime1 = (yearsDifference1 * 12) + monthsDifference1 + Math.ceil(daysDifference1 / 30);
 
     var amountUsed1 = totalTime1 * 24.1666667;
@@ -54,12 +52,11 @@ function calculateRefundFamily() {
     var monthsDifference2 = endDate2.getMonth() - startDate2.getMonth();
     var daysDifference2= endDate2.getDate() - startDate2.getDate();
     
-    // Calculate total time in months rounded up
     var totalTime2 = (yearsDifference2 * 12) + monthsDifference2 + Math.ceil(daysDifference2 / 30);
 
     var amountUsed2 = totalTime2 * 26.6666667;
     var refundAmount2 = (annualFee2 - amountUsed2);
-    
+
     document.getElementById('amountUsed2').textContent = amountUsed2.toFixed(2);
     document.getElementById('refundAmount2').textContent = refundAmount2.toFixed(2);
 }
