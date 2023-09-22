@@ -55,10 +55,11 @@ input {
     text-align: center;
 }
 
-button {
+.calculate {
     margin-top: 20px;
+    display: inline-flex;
+    align-self: center;
 }
-
 
 ul {
     list-style: none;
