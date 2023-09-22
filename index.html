@@ -30,8 +30,11 @@
             <label for="annualFee">Annual Fee: </label>
             <input type="number" id="annualFee" value="155">
 
-            <button class="calculate" onclick="calculateRefundIndividual()">Caluclate</button>
-
+        <div class="button-container">
+            <button class="calculate" onclick="calculateRefundIndividual()">Calculate</button>
+            <button class="clear" onclick="clearIndividual()">Clear</button>
+        </div>
+            
             <h3>Amount Used: <span id="amountUsed" class="money-kept"></span></h3>
             <h3>Refund Amount: <span id="refundAmount" class="refund"></span></h3>
         </div>
@@ -45,10 +48,12 @@
 
             <label for="annualFee1">Annual Fee: </label>
             <input type="number" id="annualFee1" value="290">
-
-
-            <button class="calculate" onclick="calculateRefundCouple()">Calculate</button>
             
+            <div class="button-container">
+                <button class="calculate" onclick="calculateRefundCouple()">Calculate</button>
+                <button class="clear" onclick="clearCouple()">Clear</button>
+            </div>
+
             <h3>Amount Used: <span id="amountUsed1" class="money-kept"></span></h3>
             <h3>Refund Amount: <span id="refundAmount1" class="refund"></span></h3>
         </div>
@@ -64,7 +69,11 @@
             <label for="annualFee">Annual Fee: </label>
             <input type="number" id="annualFee2" value="320">
 
-            <button class="calculate" onclick="calculateRefundFamily()">Calculate</button>
+            <div class="button-container">
+                <button class="calculate" onclick="calculateRefundFamily()">Calculate</button>
+                <button class="clear" onclick="clearFamily()">Clear</button>
+            </div>
+            
             <h3>Amount Used: <span id="amountUsed2" class="money-kept"></span></h3>
             <h3>Refund Amount: <span id="refundAmount2" class="refund"></span></h3>
         </div>

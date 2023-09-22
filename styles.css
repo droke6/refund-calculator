@@ -55,11 +55,19 @@ input {
     text-align: center;
 }
 
-.calculate {
+.button-container {
     margin-top: 20px;
-    display: inline-flex;
     align-self: center;
+    display: flex;
+    gap: 20px;
 }
+
+.calculate,
+.clear {
+    width: 100px;
+}
+
+
 
 ul {
     list-style: none;
@@ -82,6 +90,7 @@ ul {
     .container{
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
     
     .title img{

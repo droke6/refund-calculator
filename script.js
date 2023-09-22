@@ -19,6 +19,7 @@ function calculateRefundIndividual() {
     document.getElementById('refundAmount').textContent = refundAmount.toFixed(2);
 }
 
+
 function calculateRefundCouple() {
     var startDate1 = document.getElementById('startDate1').value;
     var endDate1 = document.getElementById('endDate1').value;
@@ -59,4 +60,25 @@ function calculateRefundFamily() {
 
     document.getElementById('amountUsed2').textContent = amountUsed2.toFixed(2);
     document.getElementById('refundAmount2').textContent = refundAmount2.toFixed(2);
+}
+
+function clearIndividual() {
+    document.getElementById('startDate').value = "";
+    document.getElementById("endDate").value = "";
+    document.getElementById('amountUsed').textContent = "";
+    document.getElementById('refundAmount').textContent = "";
+}
+
+function clearCouple() {
+    document.getElementById('startDate1').value = "";
+    document.getElementById("endDate1").value = "";
+    document.getElementById('amountUsed1').textContent = "";
+    document.getElementById('refundAmount1').textContent ="";
+}
+
+function clearFamily() {
+    document.getElementById('startDate2').value = "";
+    document.getElementById("endDate2").value = "";
+    document.getElementById('amountUsed2').textContent = "";
+    document.getElementById('refundAmount2').textContent = "";
 }
