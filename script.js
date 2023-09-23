@@ -1,3 +1,5 @@
+//functions for refund calculations. Calculator order = Individual, Couple, Family
+
 function calculateRefundIndividual() {
     var startDate = document.getElementById('startDate').value;
     var endDate = document.getElementById('endDate').value;
@@ -62,6 +64,8 @@ function calculateRefundFamily() {
     document.getElementById('refundAmount2').textContent = refundAmount2.toFixed(2);
 }
 
+//functions to clear date inputs and amount results. Order = Individual, Couple, Family
+
 function clearIndividual() {
     document.getElementById('startDate').value = "";
     document.getElementById("endDate").value = "";
@@ -81,4 +85,29 @@ function clearFamily() {
     document.getElementById("endDate2").value = "";
     document.getElementById('amountUsed2').textContent = "";
     document.getElementById('refundAmount2').textContent = "";
+}
+
+document.getElementById("membership-type").addEventListener("change", showCalculator);
+
+function showCalculator() {
+    var membershipType = document.getElementById("membership-type").value;
+
+    // Hide all membership sections
+    document.querySelectorAll('.container > div').forEach(function(el) {
+        el.style.display = 'none';
+    });
+
+    // Show the selected membership section
+    document.querySelector('.' + membershipType.toLowerCase()).style.display = 'flex';
+
+    if (membershipType === "individual") {
+        clearCouple();
+        clearFamily();
+    } else if (membershipType === "couple") {
+        clearIndividual();
+        clearFamily();
+    } else if (membershipType === "family") {
+        clearIndividual();
+        clearCouple();
+    }
 }

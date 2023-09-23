@@ -16,69 +16,80 @@
                 <li>Only change the Start Date and End Date.</li>
                 <li>The End Date cannot be more than a year after the Start Date.</li>
             </ul>
-
-    <div class="container">
-        <div class="individual">
-            <h2>Individual Membership</h2>
-
-            <label for="startDate">Start Date: </label>
-            <input type="date" id="startDate">
-
-            <label for="endDate">End Date: </label>
-            <input type="date" id="endDate">
-
-            <label for="annualFee">Annual Fee: </label>
-            <input type="number" id="annualFee" value="155">
-
-        <div class="button-container">
-            <button class="calculate" onclick="calculateRefundIndividual()">Calculate</button>
-            <button class="clear" onclick="clearIndividual()">Clear</button>
-        </div>
-            
-            <h3>Amount Used: <span id="amountUsed" class="money-kept"></span></h3>
-            <h3>Refund Amount: <span id="refundAmount" class="refund"></span></h3>
-        </div>
-        <div class="couple">
-            <h2>Couple's Membership</h2>
-            <label for="startDate1">Start Date: </label>
-            <input type="date" id="startDate1">
-
-            <label for="endDate1">End Date: </label>
-            <input type="date" id="endDate1">
-
-            <label for="annualFee1">Annual Fee: </label>
-            <input type="number" id="annualFee1" value="290">
-            
-            <div class="button-container">
-                <button class="calculate" onclick="calculateRefundCouple()">Calculate</button>
-                <button class="clear" onclick="clearCouple()">Clear</button>
-            </div>
-
-            <h3>Amount Used: <span id="amountUsed1" class="money-kept"></span></h3>
-            <h3>Refund Amount: <span id="refundAmount1" class="refund"></span></h3>
+    <div>
+        <div class="memberships">
+            <form onclick="showCalculator()">
+            <select name="membership" id="membership-type">
+                <option value="">Select a Membership Type</option>
+                <option value="individual">Individual</option>
+                <option value="couple">Couple</option>
+                <option value="family">Family</option>
+            </select>
+            </form>
         </div>
 
-        <div class="family">
-            <h2>Family Membership</h2>
-            <label for="startDate">Start Date: </label>
-            <input type="date" id="startDate2">
+        <div class="container">
+            <div class="individual">
+                <h2>Individual Membership</h2>
 
-            <label for="endDate">End Date: </label>
-            <input type="date" id="endDate2">
+                <label for="startDate">Start Date: </label>
+                <input type="date" id="startDate">
 
-            <label for="annualFee">Annual Fee: </label>
-            <input type="number" id="annualFee2" value="320">
+                <label for="endDate">End Date: </label>
+                <input type="date" id="endDate">
+
+                <label for="annualFee">Annual Fee: </label>
+                <input type="number" id="annualFee" value="155">
 
             <div class="button-container">
-                <button class="calculate" onclick="calculateRefundFamily()">Calculate</button>
-                <button class="clear" onclick="clearFamily()">Clear</button>
+                <button class="calculate" onclick="calculateRefundIndividual()">Calculate</button>
+                <button class="clear" onclick="clearIndividual()">Clear</button>
             </div>
-            
-            <h3>Amount Used: <span id="amountUsed2" class="money-kept"></span></h3>
-            <h3>Refund Amount: <span id="refundAmount2" class="refund"></span></h3>
-        </div>
-    </div> 
+                
+                <h3>Amount Used: <span id="amountUsed" class="money-kept"></span></h3>
+                <h3>Refund Amount: <span id="refundAmount" class="refund"></span></h3>
+            </div>
+            <div class="couple">
+                <h2>Couple's Membership</h2>
+                <label for="startDate1">Start Date: </label>
+                <input type="date" id="startDate1">
 
+                <label for="endDate1">End Date: </label>
+                <input type="date" id="endDate1">
+
+                <label for="annualFee1">Annual Fee: </label>
+                <input type="number" id="annualFee1" value="290">
+                
+                <div class="button-container">
+                    <button class="calculate" onclick="calculateRefundCouple()">Calculate</button>
+                    <button class="clear" onclick="clearCouple()">Clear</button>
+                </div>
+
+                <h3>Amount Used: <span id="amountUsed1" class="money-kept"></span></h3>
+                <h3>Refund Amount: <span id="refundAmount1" class="refund"></span></h3>
+            </div>
+
+            <div class="family">
+                <h2>Family Membership</h2>
+                <label for="startDate">Start Date: </label>
+                <input type="date" id="startDate2">
+
+                <label for="endDate">End Date: </label>
+                <input type="date" id="endDate2">
+
+                <label for="annualFee">Annual Fee: </label>
+                <input type="number" id="annualFee2" value="320">
+
+                <div class="button-container">
+                    <button class="calculate" onclick="calculateRefundFamily()">Calculate</button>
+                    <button class="clear" onclick="clearFamily()">Clear</button>
+                </div>
+                
+                <h3>Amount Used: <span id="amountUsed2" class="money-kept"></span></h3>
+                <h3>Refund Amount: <span id="refundAmount2" class="refund"></span></h3>
+            </div>
+        </div> 
+    </div>
     <script src="./script.js"></script>
 
 </body>
