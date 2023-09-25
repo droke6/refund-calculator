@@ -99,7 +99,10 @@ ul {
 .memberships > input {
     margin-left: 10px;
 }
-
+#membership-type {
+    font-size: 18px;
+    background-color: white;
+}
 @media (max-width: 700px){
     .container{
         flex-direction: column;
