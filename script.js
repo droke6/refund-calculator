@@ -3,7 +3,7 @@
 function calculateRefundIndividual() {
     var startDate = document.getElementById('startDate').value;
     var endDate = document.getElementById('endDate').value;
-    var annualFee = parseFloat(document.getElementById('annualFee').value);
+    var annualFee = parseFloat(document.getElementById('annualFee').innerText);
 
     startDate = new Date(startDate);
     endDate = new Date(endDate);
@@ -25,7 +25,7 @@ function calculateRefundIndividual() {
 function calculateRefundCouple() {
     var startDate1 = document.getElementById('startDate1').value;
     var endDate1 = document.getElementById('endDate1').value;
-    var annualFee1 = parseFloat(document.getElementById('annualFee1').value);
+    var annualFee1 = parseFloat(document.getElementById('annualFee1').innerText);
 
     startDate1 = new Date(startDate1);
     endDate1 = new Date(endDate1);
@@ -46,7 +46,7 @@ function calculateRefundCouple() {
 function calculateRefundFamily() {
     var startDate2 = document.getElementById('startDate2').value;
     var endDate2 = document.getElementById('endDate2').value;
-    var annualFee2 = parseFloat(document.getElementById('annualFee2').value);
+    var annualFee2 = parseFloat(document.getElementById('annualFee2').innerText);
 
     startDate2 = new Date(startDate2);
     endDate2 = new Date(endDate2);
